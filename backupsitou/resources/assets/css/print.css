@@ -1,0 +1,16 @@
+.hide-on-print{
+    display: none;
+}
+.border-on-print{
+    border: 1px solid #000;
+}
+.border-right-on-print{
+    border-right: 1px solid #000;
+}
+.border-left-on-print{
+    border-left: 1px solid #000;
+}
+
+.show-on-print{
+    display: block !important;
+}

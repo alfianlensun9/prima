@@ -1,0 +1,68 @@
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px #fdfcf4; }
+    40% { box-shadow: 0 0 20px #a5ffd5; }
+    60% { box-shadow: 0 0 20px #ffffff; }
+    100% { box-shadow: 0 0 -10px #2ed1d1; }
+}
+  
+.glow {
+    border-radius: 100px;
+    animation: glowing 5000ms infinite;
+}
+
+body { 
+
+
+    background: url("/images/mojave.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.input-opacity {
+    background-color: rgba(255, 255, 255, 0.089);
+}
+
+
+.transparent-profil-change{
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color : #777;
+    padding-top: 10px;
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: 50px;
+    bottom: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.spinner {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+  }
+  
+  .spinner::after {
+    content: '';
+    position: absolute !important;
+    top: calc(50% - (1em / 2));
+    left: calc(50% - (1em / 2));
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: spinAround 500ms infinite linear;
+  }
+  
+  @keyframes spinAround {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
